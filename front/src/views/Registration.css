@@ -1,0 +1,24 @@
+
+div.registration-content {
+    margin-top: 5% !important;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div button#register-btn {
+    margin-top: 25px;
+    max-width: fit-content;
+    font-size: 1.5rem;
+}
+
+img.image-registration {
+    border-radius: 50%;
+}

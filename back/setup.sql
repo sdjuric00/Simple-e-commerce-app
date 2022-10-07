@@ -1,0 +1,3 @@
+CREATE USER srdjan WITH PASSWORD 'admin';
+
+CREATE DATABASE internship WITH OWNER=srdjan;

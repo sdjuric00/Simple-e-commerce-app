@@ -1,0 +1,112 @@
+
+:root {
+    --dark-navy: #020c1b;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --ligth-green: #1DB954;
+}
+
+div .login-container {
+    max-height: 100vh;
+    overflow: auto;
+}
+
+div .form-login-style {
+    margin-top: 15%;
+    background-color: var(--ligth-green);
+    border-radius: 25px;
+    padding: 5% 25%;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+div .register-link-login {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.register-link-login:hover, .register-link-login:active {
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    transition: .5s;
+}
+
+.login-button {
+    width: 100px;
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    font-size: 1.2rem;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #0000FF;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.login-button:hover, .login-button:active {
+    background-color: #67E6EC;
+    transition: .5s;
+}
+
+@media screen and (min-width: 768px) {
+    div .login-container {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div .form-login-style {
+        font-size: 1.2rem;
+    }
+
+    div .register-link-login {
+        font-size: 0.9rem;
+    }
+}
+
+.product-card {
+    width: 18rem;
+    margin: 5%;
+}
+
+div p.product-card-price {
+    font-size: 1.2rem;
+}
+
+div p.product-card-quantity {
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.card-btn {
+    margin: 0px 10px;
+    font-size: 1.2rem;
+}
+
+.add-product-btn {
+    max-width: fit-content;
+    margin: 20px;
+    font-size: 1.5rem !important;
+    font-weight: bold !important
+}
+
+#search-no-products-result {
+    margin: 5%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+

@@ -1,0 +1,94 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(232, 226, 226);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.modalContainer {
+    width: 800px;
+    height: 700px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    z-index: 20;
+}
+
+.modalContainer .modal-title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    color: #1DB954;
+    font-weight: bold;
+}
+
+.titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.modalContainer .modal-body {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.modalContainer .modal-footer {
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .modal-footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    background-color: crimson;
+}
+
+p.product-badge {
+    margin: 5px;
+}
+
+div.review-row {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+span.review-span p {
+    display:inline;
+    margin-left: 20px ;
+}
+
+div.change-profile-form {
+    margin-top: 5%;
+    font-size: 1.3rem;
+}
+
+#profile-pic-change {
+    margin-top: 3%;
+}

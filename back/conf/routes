@@ -1,0 +1,43 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
+#PRODUCT
+GET     /products                                           controllers.ProductsController.allProducts
+GET     /product/:id                                        controllers.ProductsController.findById(id: Int)
+DELETE  /product/:id                                        controllers.ProductsController.logicalDelete(id: Int)
+POST    /product                                            controllers.ProductsController.create()
+PUT     /product                                            controllers.ProductsController.update()
+GET     /product/:name/:category/:available/:lowToHigh      controllers.ProductsController.search(name: String, category: String, available: Boolean, lowToHigh: Boolean)
+GET     /products-active                                    controllers.ProductsController.activeProducts()
+GET     /products-by-popularity                             controllers.ProductsController.productsByPopularity()
+
+#USER
+POST    /login                                              controllers.UserController.login()
+GET     /user/:id                                           controllers.UserController.findUserById(id: Int)
+GET     /user-by-email/:email                               controllers.UserController.findUserByEmail(email: String)
+GET     /users-active                                       controllers.UserController.activeUsers()
+POST    /user                                               controllers.UserController.register()
+PUT     /user                                               controllers.UserController.update()
+POST    /activate                                           controllers.UserController.activateAcc()
+
+#Orders
+GET     /orders/:parameter                                  controllers.OrderController.getOrders(parameter: String)
+GET     /all-orders/:parameter                              controllers.OrderController.getAllOrders(parameter: String)
+GET     /order/:id                                          controllers.OrderController.getFullOrderData(id: Int)
+POST    /order                                              controllers.OrderController.createOrder()
+
+#Reviews
+GET     /reviews/:id/:sortParameter                         controllers.ReviewController.getReviews(id: Int, sortParameter: String)
+POST    /review                                             controllers.ReviewController.createReview()

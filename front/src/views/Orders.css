@@ -1,0 +1,20 @@
+
+span#sort-by-orders {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div.sort-orders-container {
+    margin-top: 5%;
+}
+
+#sort-orders-combo {
+    margin-left: 2%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+div.orders-rows {
+    margin-top: 5% !important;
+    font-size: 1.2rem;
+}

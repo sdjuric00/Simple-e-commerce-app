@@ -1,0 +1,22 @@
+
+div#search-bar-btn {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#search-bar-btn input {
+    max-width: fit-content;
+    border-color: #1DB954;
+    border-width: thin;
+}
+
+div#search-bar-btn button {
+    max-width: fit-content;
+    margin-left: 5%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
