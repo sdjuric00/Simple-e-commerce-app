@@ -1,4 +1,3 @@
-Simple e commerce app built using Scala, Play framework, React JS and PstgreSQL.
 
 <h1 align="center">
   BakiShop Application
