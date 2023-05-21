@@ -30,7 +30,7 @@ class UserController @Inject() (cc: ControllerComponents, userService: UserServi
     }
   }
 
-  def findUserByEmail(email: String) = regularAction.async { request =>
+  def findUserByEmail(email: String) = allAction.async { request =>
     userService.findUserByEmail(email).map {
       case Some(user) => Ok(Json.toJson(UserDTO.toUserDTO(user)))
       case None       => BadRequest(s"User with that email ${email} doesn't exist")
